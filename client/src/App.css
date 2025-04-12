@@ -1,0 +1,47 @@
+.app {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .app.dark {
+    background-color: #1a1a1a;
+  }
+  
+  .card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 15px; 
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  .theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .theme-toggle img {
+    width: 45px; 
+    height: 45px;
+    display: block;
+  }
